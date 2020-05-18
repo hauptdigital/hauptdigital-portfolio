@@ -19,12 +19,13 @@ const animateText = keyframes`
 `;
 
 const BrandText = styled(BrandTextSVG)`
+  margin: 2rem 0;
   width: 100%;
   & > path {
     fill: transparent;
     stroke-dasharray: 561;
     stroke-dashoffset: 561;
-    animation: ${animateText} 4s ease forwards 2s;
+    animation: ${animateText} 4s ease forwards 1s;
   }
 `;
 
