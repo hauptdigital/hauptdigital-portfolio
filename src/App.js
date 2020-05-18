@@ -2,13 +2,16 @@ import React from 'react';
 import { ThemeProvider } from 'emotion-theming';
 import theme from './theme';
 import GlobalStyles from './GlobalStyles';
+import Container from './components/Container';
+import BrandLogo from './components/BrandLogo.js';
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <h1>Title</h1>
-      <p>paragraph</p>
+      <Container>
+        <BrandLogo />
+      </Container>
     </ThemeProvider>
   );
 }
