@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { ReactComponent as BrandTextSVG } from '../assets/BrandText.svg';
 import styled from '@emotion/styled';
 import { keyframes } from '@emotion/core';
@@ -30,16 +30,9 @@ const BrandText = styled(BrandTextSVG)`
 `;
 
 function BrandLogo() {
-  const logoText = useRef(null);
-  React.useEffect(() => {
-    const pathLength = logoText.current.children[0].getTotalLength();
-    console.log(pathLength);
-  });
-
   return (
     <>
-      <div></div>
-      <BrandText ref={logoText} />
+      <BrandText />
     </>
   );
 }
