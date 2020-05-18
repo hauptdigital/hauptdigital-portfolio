@@ -5,7 +5,7 @@ function GlobalStyle() {
   return (
     <Global
       styles={(theme) => css`
-        @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@300;400;600&display=swap');
         *,
         *:before,
         *:after {
@@ -14,7 +14,7 @@ function GlobalStyle() {
         body {
           font-size: 16px;
           margin: 0;
-          font-family: 'Montserrat', sans-serif;
+          font-family: 'Open Sans', sans-serif;
           background-color: ${theme.colors.background};
           color: ${theme.colors.primary};
         }
@@ -31,6 +31,15 @@ function GlobalStyle() {
         body::-webkit-scrollbar-thumb {
           border-radius: 10px;
           background-color: ${theme.colors.light};
+        }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+          font-family: 'Lato', sans-serif;
+          font-weight: 400;
+          color: ${theme.colors.secondary};
         }
         a,
         a:hover,

@@ -7,7 +7,8 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      my app
+      <h1>Title</h1>
+      <p>paragraph</p>
     </ThemeProvider>
   );
 }
