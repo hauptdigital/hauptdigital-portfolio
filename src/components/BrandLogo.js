@@ -19,6 +19,7 @@ const animateText = keyframes`
 `;
 
 const BrandText = styled(BrandTextSVG)`
+  width: 100%;
   & > path {
     fill: transparent;
     stroke-dasharray: 561;
