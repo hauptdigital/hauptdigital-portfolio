@@ -21,8 +21,7 @@ const Container = styled.div`
   padding: 15px;
   height: 100vh;
   animation: ${fadeIn} 5s ease-in;
-  background-color: #000000;
-  /* background-color: #3d3356;*/
+  background-color: #3d3356;
 `;
 
 export default Container;
