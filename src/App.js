@@ -3,7 +3,7 @@ import { ThemeProvider } from 'emotion-theming';
 import theme from './theme';
 import GlobalStyles from './GlobalStyles';
 import Container from './components/Container';
-import BrandLogo from './components/BrandLogo';
+import Brand from './components/Brand';
 import SubTitle from './components/SubTitle';
 import LinkList from './components/LinkList.js';
 import Link from './components/Link.js';
@@ -13,7 +13,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <Container>
-        <BrandLogo />
+        <Brand />
         <SubTitle />
         <LinkList>
           <Link href="https://github.com/hauptdigital/" target="_blank">

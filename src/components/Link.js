@@ -27,6 +27,7 @@ const Link = styled.a`
     background-color: ${theme.colors.secondary};
   }
   &:hover {
+    background-color: #ffffff99;
     &:before {
       content: '';
       width: 100%;
