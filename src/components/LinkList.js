@@ -14,7 +14,7 @@ const fadeIn = keyframes`
 `;
 
 const LinkList = styled.div`
-  animation: ${fadeIn} 5s ease-in;
+  /*animation: ${fadeIn} 5s ease-in;*/
   max-width: 600px;
   width: 100%;
   font-size: 18px;

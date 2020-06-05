@@ -18,10 +18,11 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: auto;
   padding: 15px;
-  height: 100vh;
-  animation: ${fadeIn} 5s ease-in;
-  background-color: #3d3356;
+  width: 100%;
+  max-width: 700px;
+  /*animation: ${fadeIn} 5s ease-in;*/
 `;
 
 export default Container;

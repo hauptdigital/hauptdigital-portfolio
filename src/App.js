@@ -3,18 +3,16 @@ import { ThemeProvider } from 'emotion-theming';
 import theme from './theme';
 import GlobalStyles from './GlobalStyles';
 import Container from './components/Container';
-import Brand from './components/Brand';
-import SubTitle from './components/SubTitle';
 import LinkList from './components/LinkList.js';
 import Link from './components/Link.js';
+import ProfileBox from './components/ProfileBox';
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <Container>
-        <Brand />
-        <SubTitle />
+        <ProfileBox />
         <LinkList>
           <Link href="https://github.com/hauptdigital/" target="_blank">
             GitHub

@@ -12,7 +12,7 @@ function GlobalStyle() {
           box-sizing: border-box;
         }
         body {
-          font-size: 16px;
+          font-size: 24px;
           margin: 0;
           font-family: 'Open Sans', sans-serif;
           background-color: ${theme.colors.background};
@@ -39,13 +39,17 @@ function GlobalStyle() {
         h5 {
           font-family: 'Lato', sans-serif;
           font-weight: 400;
-          color: ${theme.colors.secondary};
+          color: ${theme.colors.primary};
         }
         a,
         a:hover,
         a:active,
         a:visited {
           color: ${theme.colors.primary};
+        }
+        p {
+          margin: 0;
+          padding: 0.5em 0;
         }
       `}
     />
