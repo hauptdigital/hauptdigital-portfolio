@@ -19,7 +19,7 @@ const Content = styled.div``;
 
 function ContentBox(props) {
   return (
-    <ContentContainer>
+    <ContentContainer animateIn="fadeIn">
       <ContentTitle>{props.title}</ContentTitle>
       <Content>{props.children}</Content>
     </ContentContainer>
