@@ -30,7 +30,7 @@ function GlobalStyle() {
 
         body::-webkit-scrollbar-thumb {
           border-radius: 10px;
-          background-color: ${theme.colors.light};
+          background-color: ${theme.colors.secondary};
         }
         h1,
         h2,
