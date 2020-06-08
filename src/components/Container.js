@@ -19,7 +19,6 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   margin: auto;
-  padding: 15px;
   width: 100%;
   max-width: 700px;
   /*animation: ${fadeIn} 5s ease-in;*/

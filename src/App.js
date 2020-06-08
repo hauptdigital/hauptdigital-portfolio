@@ -3,9 +3,9 @@ import { ThemeProvider } from 'emotion-theming';
 import theme from './theme';
 import GlobalStyles from './GlobalStyles';
 import Container from './components/Container';
-import LinkList from './components/LinkList.js';
-import Link from './components/Link.js';
 import ProfileBox from './components/ProfileBox';
+import ContentBox from './components/ContentBox';
+import TechList from './components/TechList';
 
 function App() {
   return (
@@ -13,20 +13,27 @@ function App() {
       <GlobalStyles />
       <Container>
         <ProfileBox />
-        <LinkList>
-          <Link href="https://github.com/hauptdigital/" target="_blank">
-            GitHub
-          </Link>
-          <Link href="https://www.xing.com/profile/Marc_Haupt2" target="_blank">
-            XING
-          </Link>
-          <Link href="https://www.linkedin.com/in/marchaupt2/" target="_blank">
-            LinkedIN
-          </Link>
-          <Link href="mailto:marc@haupt.digital" target="_blank">
-            Mail
-          </Link>
-        </LinkList>
+        <ContentBox>
+          <p>
+            <span style={{ fontSize: '2rem', fontWeight: 'bold' }}>Hey</span> -
+            my name is Marc and I am a Freelance Web Developer from Cologne in
+            Germany. I specialize in JavaScript and related web technologies and
+            frameworks (React JS, Node.js, Express, MongoDB, RESTful API and
+            more).
+          </p>
+          <p>
+            Cornerstones of my work are semantic clean-code, minimalistic
+            UI&apos;s, a user-oriented approach and{' '}
+            <span style={{ fontWeight: 'bold' }}>yes</span> - documentation.
+          </p>
+          <p>
+            I am always open for web development projects in my area or remote.
+            If you have questions, please feel free to contact me.
+          </p>
+        </ContentBox>
+        <ContentBox title="TECHNOLOGY THAT I LIKE TO USE IN PROJECTS">
+          <TechList />
+        </ContentBox>
       </Container>
     </ThemeProvider>
   );

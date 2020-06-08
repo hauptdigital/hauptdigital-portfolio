@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import profileimage from '../assets/mh_foto.png';
+import LinkList from './LinkList';
+import Link from './Link';
 
 const ProfileContainer = styled.div`
   display: flex;
@@ -8,6 +10,14 @@ const ProfileContainer = styled.div`
   align-items: center;
   justify-content: space-around;
   width: 100%;
+  height: 75vh;
+`;
+
+const ProfileImageContainer = styled.div`
+  flex-basis: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const ProfileImage = styled.img`
@@ -15,6 +25,7 @@ const ProfileImage = styled.img`
 `;
 
 const ProfileDetails = styled.div`
+  flex-basis: 60%;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -33,10 +44,31 @@ const SubTitle = styled(Title)`
 function ProfileBox() {
   return (
     <ProfileContainer>
-      <ProfileImage src={profileimage} alt="Marc Haupt" />
+      <ProfileImageContainer>
+        <ProfileImage src={profileimage} alt="Marc Haupt" />
+      </ProfileImageContainer>
       <ProfileDetails>
         <Title>Marc Haupt</Title>
-        <SubTitle>👨‍💻 Freelance Web Developer</SubTitle>
+        <SubTitle>
+          <span role="img" aria-label="developer male">
+            👨‍💻
+          </span>{' '}
+          Freelance Web Developer
+        </SubTitle>
+        <LinkList>
+          <Link href="https://github.com/hauptdigital/" target="_blank">
+            GitHub
+          </Link>
+          <Link href="https://www.xing.com/profile/Marc_Haupt2" target="_blank">
+            XING
+          </Link>
+          <Link href="https://www.linkedin.com/in/marchaupt2/" target="_blank">
+            LinkedIN
+          </Link>
+          <Link href="mailto:marc@haupt.digital" target="_blank">
+            Mail
+          </Link>
+        </LinkList>
       </ProfileDetails>
     </ProfileContainer>
   );

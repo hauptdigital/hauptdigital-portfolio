@@ -8,7 +8,7 @@ const animateUnderline = keyframes`
 
 const Link = styled.a`
   padding: 0.5rem;
-  margin: 0.5rem 0.5rem;
+  margin: 0.5rem;
   background-color: #ffffff47;
   text-decoration: none;
   transition: ${animateUnderline};
