@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import profileimage from '../assets/mh_foto.png';
+import profileimage from '../assets/dev-emoji.PNG';
 import LinkList from './LinkList';
 import Link from './Link';
 
@@ -49,12 +49,7 @@ function ProfileBox() {
       </ProfileImageContainer>
       <ProfileDetails>
         <Title>Marc Haupt</Title>
-        <SubTitle>
-          <span role="img" aria-label="developer male">
-            👨‍💻
-          </span>{' '}
-          Freelance Web Developer
-        </SubTitle>
+        <SubTitle>{`<FreelanceWebDeveloper />`}</SubTitle>
         <LinkList>
           <Link href="https://github.com/hauptdigital/" target="_blank">
             GitHub
