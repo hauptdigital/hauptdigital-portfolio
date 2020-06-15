@@ -8,7 +8,7 @@ const animateUnderline = keyframes`
 
 const Link = styled.a`
   padding: 0.5rem;
-  margin: 0.5rem 0.5rem;
+  margin: 0.5rem;
   background-color: #ffffff47;
   text-decoration: none;
   transition: ${animateUnderline};
@@ -33,6 +33,11 @@ const Link = styled.a`
       width: 100%;
       opacity: 1;
     }
+  }
+  @media (max-width: 767px) {
+    flex-basis: 45%;
+    text-align: center;
+    background-color: #9b9b9b47;
   }
 `;
 

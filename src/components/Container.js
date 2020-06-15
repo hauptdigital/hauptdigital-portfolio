@@ -3,13 +3,10 @@ import styled from '@emotion/styled';
 
 const fadeIn = keyframes`
     0% {
-      background-color: transparent;
-    }
-    90% {
-      background-color: transparent;
+      opacity: 0;
     }
     100% {
-      background-color: #3D3356;
+      opacity: 1;
     }
 `;
 
@@ -18,10 +15,10 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 15px;
-  height: 100vh;
-  animation: ${fadeIn} 5s ease-in;
-  background-color: #3d3356;
+  margin: auto;
+  width: 100%;
+  max-width: 700px;
+  animation: ${fadeIn} 2s ease-in;
 `;
 
 export default Container;

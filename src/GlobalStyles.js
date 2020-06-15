@@ -12,7 +12,7 @@ function GlobalStyle() {
           box-sizing: border-box;
         }
         body {
-          font-size: 16px;
+          font-size: 24px;
           margin: 0;
           font-family: 'Open Sans', sans-serif;
           background-color: ${theme.colors.background};
@@ -30,7 +30,7 @@ function GlobalStyle() {
 
         body::-webkit-scrollbar-thumb {
           border-radius: 10px;
-          background-color: ${theme.colors.light};
+          background-color: ${theme.colors.secondary};
         }
         h1,
         h2,
@@ -39,13 +39,17 @@ function GlobalStyle() {
         h5 {
           font-family: 'Lato', sans-serif;
           font-weight: 400;
-          color: ${theme.colors.secondary};
+          color: ${theme.colors.primary};
         }
         a,
         a:hover,
         a:active,
         a:visited {
           color: ${theme.colors.primary};
+        }
+        p {
+          margin: 0;
+          padding: 0.5em 0;
         }
       `}
     />
