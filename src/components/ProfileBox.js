@@ -6,9 +6,15 @@ import Link from './Link';
 
 const ProfileContainer = styled.div`
   display: flex;
-  flex-direction: row;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  @media (max-width: 767px) {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
   align-items: center;
-  justify-content: space-around;
   width: 100%;
   height: 100vh;
 `;
@@ -18,6 +24,9 @@ const ProfileImageContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 767px) {
+    flex-basis: auto;
+  }
 `;
 
 const ProfileImage = styled.img`
@@ -30,15 +39,26 @@ const ProfileDetails = styled.div`
   flex-direction: column;
   align-items: start;
   justify-content: center;
+  @media (max-width: 767px) {
+    flex-basis: auto;
+  }
 `;
 
 const Title = styled.p`
   font-family: 'Lato', sans-serif;
   font-weight: 400;
+  @media (max-width: 767px) {
+    width: 100%;
+    text-align: center;
+  }
 `;
 
 const SubTitle = styled(Title)`
   color: #707070;
+  @media (max-width: 767px) {
+    width: 100%;
+    text-align: center;
+  }
 `;
 
 function ProfileBox() {

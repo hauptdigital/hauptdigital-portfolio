@@ -34,6 +34,11 @@ const Link = styled.a`
       opacity: 1;
     }
   }
+  @media (max-width: 767px) {
+    flex-basis: 45%;
+    text-align: center;
+    background-color: #9b9b9b47;
+  }
 `;
 
 export default Link;
